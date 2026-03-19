@@ -24,3 +24,17 @@ console.log("Hello World")
     getComputerChoice = "Scissors";
 }
 console.log(getComputerChoice);
+
+//Segunda Etapa//
+  let getHumanChoice = prompt("Bet on one of the objects: Rock; Paper; Scissors");
+
+  if (getHumanChoice === "Rock") {
+    getHumanChoice = "Rock";
+} else if (getHumanChoice === "Paper") {
+    getHumanChoice = "Paper";
+} else { (getHumanChoice === "Scissors")
+    getHumanChoice = "Scissors";  
+}
+console.log(getHumanChoice);  
+
+//Terceira Etapa//
