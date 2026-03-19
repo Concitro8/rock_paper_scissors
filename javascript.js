@@ -25,7 +25,8 @@ console.log("Hello World")
        else { (machine === 3) 
          machine = "Scissors";
 }
-      console.log(machine);
+console.log(machine);
+
 
 //Segunda Etapa//
    function getHumanChoice(user){};  
@@ -41,5 +42,15 @@ console.log("Hello World")
 }      else { (user === "Scissors")
          user = "Scissors";  
 }
-      console.log(user);  
+console.log(user);  
 
+
+//Terceira Etapa//
+   let humanScore = 0;
+   let computerScore = 0;
+
+console.log(humanScore);
+console.log(computerScore);
+
+
+//Quarta Etapa//
