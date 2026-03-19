@@ -9,3 +9,9 @@ console.log("Hello World")
 //Quarta Etapa = Realizar uma rodada,comparando a resposta dos jogadores e retornando um vencedor da rodada//
 
 //Quinta Etapa = Fazer com que o jogo tenha 5 rodadas,e depois declarando um vencedor da competicao//
+
+esse e um teste de commitar mensagens
+
+subject cinquenta letras
+
+body setenta e duas letras
