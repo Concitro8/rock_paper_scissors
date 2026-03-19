@@ -1,1 +1,1 @@
-# rock-paper-scissors
+Esse projeto tem o objetivo de criar um jogo de pedra,papel,tesoura(humano vs maquina)
