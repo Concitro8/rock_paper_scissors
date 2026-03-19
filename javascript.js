@@ -10,14 +10,3 @@ console.log("Hello World")
 
 //Quinta Etapa = Fazer com que o jogo tenha 5 rodadas,e depois declarando um vencedor da competicao//
 
-esse e um teste de commitar mensagens
-
-//subject cinquenta letras//
-
-//body setenta e duas letras//
-
-
-teste linha 20
-
-
-teste linha 23
