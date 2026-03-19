@@ -12,9 +12,9 @@ console.log("Hello World")
 
 esse e um teste de commitar mensagens
 
-subject cinquenta letras
+//subject cinquenta letras//
 
-body setenta e duas letras
+//body setenta e duas letras//
 
 
 teste linha 20
