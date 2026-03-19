@@ -10,3 +10,17 @@ console.log("Hello World")
 
 //Quinta Etapa = Fazer com que o jogo tenha 5 rodadas,e depois declarando um vencedor da competicao//
 
+//--------------------------------------------------------------------------------------------------------------------//
+
+//Primeira Etapa//
+  let getComputerChoice = Math.floor(Math.random() * 3) + 1;
+  if (getComputerChoice === 1) {
+    getComputerChoice = "Rock";
+}
+  else if (getComputerChoice === 2) {
+    getComputerChoice = "Paper";
+}
+  else { (getComputerChoice === 3) 
+    getComputerChoice = "Scissors";
+}
+console.log(getComputerChoice);
