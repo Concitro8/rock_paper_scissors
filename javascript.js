@@ -13,28 +13,33 @@ console.log("Hello World")
 //--------------------------------------------------------------------------------------------------------------------//
 
 //Primeira Etapa//
-  let getComputerChoice = Math.floor(Math.random() * 3) + 1;
-  if (getComputerChoice === 1) {
-    getComputerChoice = "Rock";
+   function getComputerChoice(machine){};
+
+   let machine = Math.floor(Math.random() * 3) + 1;
+       if (machine === 1) {
+         machine = "Rock";
 }
-  else if (getComputerChoice === 2) {
-    getComputerChoice = "Paper";
+       else if (machine === 2) {
+         machine = "Paper";
 }
-  else { (getComputerChoice === 3) 
-    getComputerChoice = "Scissors";
+       else { (machine === 3) 
+         machine = "Scissors";
 }
-console.log(getComputerChoice);
+      console.log(machine);
 
 //Segunda Etapa//
-  let getHumanChoice = prompt("Bet on one of the objects: Rock; Paper; Scissors");
+   function getHumanChoice(user){};  
 
-  if (getHumanChoice === "Rock") {
-    getHumanChoice = "Rock";
-} else if (getHumanChoice === "Paper") {
-    getHumanChoice = "Paper";
-} else { (getHumanChoice === "Scissors")
-    getHumanChoice = "Scissors";  
+   let user = prompt("Bet on one of the objects: Rock; Paper; Scissors");
+
+       if (user === "Rock") {
+         user = "Rock";
+
+}      else if (user === "Paper") {
+         user = "Paper";
+
+}      else { (user === "Scissors")
+         user = "Scissors";  
 }
-console.log(getHumanChoice);  
+      console.log(user);  
 
-//Terceira Etapa//
