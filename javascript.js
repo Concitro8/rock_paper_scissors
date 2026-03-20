@@ -17,31 +17,31 @@ console.log("Hello World")
 
    let machine = Math.floor(Math.random() * 3) + 1;
        if (machine === 1) {
-         machine = "Rock";
+         machine = "ROCK";
 }
        else if (machine === 2) {
-         machine = "Paper";
+         machine = "PAPER";
 }
        else { (machine === 3) 
-         machine = "Scissors";
+         machine = "SCISSORS";
 }
 console.log(machine);
 
-
 //Segunda Etapa//
-   function getHumanChoice(user){};  
+     function getHumanChoice(user){};  
+       
+      let user = prompt("Bet on one of the objects: Rock; Paper; Scissors");
 
-   let user = prompt("Bet on one of the objects: Rock; Paper; Scissors");
+       if (user === "ROCK") {
+        user = "ROCK";
 
-       if (user === "Rock") {
-         user = "Rock";
+}      else if (user === "PAPER") {
+         user = "PAPER";
 
-}      else if (user === "Paper") {
-         user = "Paper";
-
-}      else { (user === "Scissors")
-         user = "Scissors";  
+}      else { (user === "SCISSORS")
+         user = "SCISSORS";  
 }
+
 console.log(user);  
 
 
@@ -49,8 +49,60 @@ console.log(user);
    let humanScore = 0;
    let computerScore = 0;
 
-console.log(humanScore);
-console.log(computerScore);
-
-
 //Quarta Etapa//
+  
+    let roundWinner = "";
+
+    function playRound(humanChoice, computerChoice) {
+       if (humanSelection === computerSelection) {
+            roundWinner = 'tie'
+}
+       if (
+          (humanSelection === 'ROCK' && computerSelection === 'SCISSORS') ||
+          (humanSelection === 'SCISSORS' && computerSelection === 'PAPER') ||
+          (humanSelection === 'PAPER' && computerSelection === 'ROCK')
+          ) {
+            humanScore++
+            roundWinner = 'player'
+}
+       if (
+          (computerSelection === 'ROCK' && humanSelection === 'SCISSORS') ||
+          (computerSelection === 'SCISSORS' && humanSelection === 'PAPER') ||
+          (computerSelection === 'PAPER' && humanSelection === 'ROCK')
+          ) {
+           computerScore++
+           roundWinner = 'computer'
+}
+
+       if (roundWinner === 'tie') {
+          alert("Tie!");
+}
+       else if (roundWinner === 'player') {
+          alert("You Win!");
+}
+       else { (roundWinner === 'computer') 
+          alert("You Lose!");
+}
+
+}
+
+
+    const humanSelection = user;
+    const computerSelection = machine;
+
+    playRound(humanSelection, computerSelection);
+
+console.log(humanScore);
+console.log(computerScore);   
+
+
+//Quinta Etapa //
+   if (humanScore === 5) {
+     alert("Human Wins!");
+} 
+   else if (computerScore === 5) {
+     alert("Computer Wins!")
+}   
+
+
+     
