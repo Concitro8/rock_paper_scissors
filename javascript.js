@@ -29,22 +29,20 @@ console.log(machine);
 
 //Segunda Etapa//
      function getHumanChoice(user){};  
-       
-      let user = prompt("Bet on one of the objects: Rock; Paper; Scissors");
+        let user = prompt("Bet on one of the objects: Rock; Paper; Scissors");
 
-       if (user === "ROCK") {
+       if (user.toUpperCase() === "ROCK") {
         user = "ROCK";
 
-}      else if (user === "PAPER") {
+}      else if (user.toUpperCase() === "PAPER") {
          user = "PAPER";
 
-}      else { (user === "SCISSORS")
+}      else { (user.toUpperCase() === "SCISSORS")
          user = "SCISSORS";  
 }
-
+   
 console.log(user);  
-
-
+    
 //Terceira Etapa//
    let humanScore = 0;
    let computerScore = 0;
