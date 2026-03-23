@@ -13,49 +13,53 @@ console.log("Hello World")
 //--------------------------------------------------------------------------------------------------------------------//
 
 //Primeira Etapa//
-   function getComputerChoice(machine){};
+   function getComputerChoice(){
 
    let machine = Math.floor(Math.random() * 3) + 1;
        if (machine === 1) {
-         machine = "ROCK";
+         return "ROCK";
 }
        else if (machine === 2) {
-         machine = "PAPER";
+         return "PAPER";
 }
        else { (machine === 3) 
-         machine = "SCISSORS";
+         return "SCISSORS";
 }
 console.log(machine);
 
+}
+
 //Segunda Etapa//
-     function getHumanChoice(user){};  
+     function getHumanChoice(){ 
         let user = prompt("Bet on one of the objects: Rock; Paper; Scissors");
+        
+        user = user.toUpperCase();        
 
-       if (user.toUpperCase() === "ROCK") {
-        user = "ROCK";
+       if (user === "ROCK") {
+        return "ROCK";
 
-}      else if (user.toUpperCase() === "PAPER") {
-         user = "PAPER";
+}      else if (user === "PAPER") {
+         return "PAPER";
 
-}      else { (user.toUpperCase() === "SCISSORS")
-         user = "SCISSORS";  
+}      else { (user === "SCISSORS")
+         return "SCISSORS";  
 }
    
 console.log(user);  
-    
+}
 //Terceira Etapa//
    let humanScore = 0;
    let computerScore = 0;
 
 //Quarta Etapa//
   
-    let roundWinner = "";
+    let roundWinner = null;
 
-    function playRound(humanChoice, computerChoice) {
+    function playRound(humanSelection, computerSelection) {
        if (humanSelection === computerSelection) {
             roundWinner = 'tie'
 }
-       if (
+       else if (
           (humanSelection === 'ROCK' && computerSelection === 'SCISSORS') ||
           (humanSelection === 'SCISSORS' && computerSelection === 'PAPER') ||
           (humanSelection === 'PAPER' && computerSelection === 'ROCK')
@@ -63,7 +67,7 @@ console.log(user);
             humanScore++
             roundWinner = 'player'
 }
-       if (
+       else if (
           (computerSelection === 'ROCK' && humanSelection === 'SCISSORS') ||
           (computerSelection === 'SCISSORS' && humanSelection === 'PAPER') ||
           (computerSelection === 'PAPER' && humanSelection === 'ROCK')
@@ -85,22 +89,29 @@ console.log(user);
 }
 
 
-    const humanSelection = user;
-    const computerSelection = machine;
+// Quinta Etapa
+for (let i = 1; i < 5; i++) {
+
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice(); 
 
     playRound(humanSelection, computerSelection);
+}
 
 console.log(humanScore);
-console.log(computerScore);   
+console.log(computerScore);
 
+// resultado
 
-//Quinta Etapa //
-   if (humanScore === 5) {
-     alert("Human Wins!");
-} 
-   else if (computerScore === 5) {
-     alert("Computer Wins!")
-}   
+if (humanScore > computerScore) {
+    alert("Human Wins!");
+}
+else if (computerScore > humanScore) {
+    alert("Computer Wins!");
+}
+else {
+    alert("It's a tie!");
+}
 
 
      
